@@ -30,6 +30,11 @@ const handleAction = () => {
   setUserInput('')
 }
 
+const deleteItem = (id) => {
+  const updatedList = list.filter((item) => item.id !== id);
+  setList(updatedList);
+}
+
 export default function Home() {
   return (
     <div>
