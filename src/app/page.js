@@ -35,6 +35,11 @@ const deleteItem = (id) => {
   setList(updatedList);
 }
 
+const startEdit = (index) => {
+  setUserInput(list[index].value)
+  setEditIndex(index)
+}
+
 export default function Home() {
   return (
     <div>
